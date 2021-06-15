@@ -4,52 +4,47 @@ import MenuItem from '../menu-item/menu-item.component';
 
 import './directory.style.scss';
 
-// import childern from '../modern-wears-clothing-image/childern.jpg'
-import Jean from '../../assets/images/jeans.jpg';
-import MaleShirt from '../../assets/images/maleshirt.jpg';
-import Jacket from '../../assets/images/jacket.jpg';
-import Sneakers from '../../assets/images/sneakers.jpg';
-import Woman from '../../assets/images/woman.jpg';
 
 class Directory extends React.Component {
   constructor() {
     super();
 
     this.state = {
-      sections: [
-        {
-          title: 'jean',
-          imageUrl: Jean,
-          id: 1,
-          linkUrl: 'jean',
-        },
-        {
-          title: 'jecket',
-          imageUrl: Jacket,
-          id: 2,
-          linkUrl: '',
-        },
-        {
-          title: 'SNEAKERS',
-          imageUrl: Sneakers,
-          id: 3,
-          linkUrl: '',
-        },
-        {
-          title: 'WOMENS',
-          imageUrl: Woman,
-          size: 'large',
-          id: 4,
-          linkUrl: '',
-        },
-        {
-          title: 'MENS',
-          imageUrl: MaleShirt,
-          size: 'large',
-          id: 5,
-          linkUrl: '',
-        },
-      ],
+      sections : [
+  {
+    title: 'hats',
+    imageUrl: 'https://i.ibb.co/cvpntL1/hats.png',
+    id: 1,
+    linkUrl: 'shop/hats'
+  },
+  {
+    title: 'jackets',
+    imageUrl: 'https://i.ibb.co/px2tCc3/jackets.png',
+    id: 2,
+    linkUrl: 'shop/jackets'
+  },
+  {
+    title: 'sneakers',
+    imageUrl: 'https://i.ibb.co/0jqHpnp/sneakers.png',
+    id: 3,
+    linkUrl: 'shop/sneakers'
+  },
+  {
+    title: 'womens',
+    imageUrl: 'https://i.ibb.co/GCCdy8t/womens.png',
+    size: 'large',
+    id: 4,
+    linkUrl: 'shop/womens'
+  },
+  {
+    title: 'mens',
+    imageUrl: 'https://i.ibb.co/R70vBrQ/men.png',
+    size: 'large',
+    id: 5,
+    linkUrl: 'shop/mens'
+  }
+],
+
     };
   }
 
